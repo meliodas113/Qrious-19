@@ -1,10 +1,4 @@
-// $(document).ready(function () {
-//     setTimeout(function()
-//     {
-//         $("#text").removeClass("title1");
-//         $("#text").addClass("title2");
-//     },2500);
-// });
+
 
 function textanime()
 {
@@ -19,5 +13,9 @@ function textanime()
         btn.classList.add("enterbutton2");
     },12000);
 }
-
 textanime();
+$("#linklogin").click(function (e) {
+    e.preventDefault();
+    $("body:before").css("z-index",500);
+    $("body:before").css("opacity",1);
+});

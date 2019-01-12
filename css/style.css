@@ -15,6 +15,24 @@
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-timing-function: linear;
   }
+  body:before
+  {
+    margin: 0;
+    content: "";
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    opacity:0;
+    -webkit-filter:blur(8px);
+    -moz-filter:blur(8px);
+    filter:blur(8px);
+    z-index: 200;
+  }
 /* Background gradients
   ---------------------------------------------- */
   #sky{
@@ -57,22 +75,27 @@
     font-family:Ultra;
     font-weight: 600;
     font-size: 3.6em;
-    /* text-transform: uppercase; */
+    text-transform: uppercase;
+    text-align: center;
     letter-spacing: 1em;
+    user-select: none;
   }
   .title2
   {
+    user-select: none;
+    text-align: center;
     color: white;
     transition: all 8s linear;
     font-family:Ultra;
     font-weight: 600;
     font-size: 3.6em;
-    /* text-transform: uppercase; */
+    text-transform: uppercase;
     letter-spacing: 0.25em;
     transform: translateY(-50px);
   }
   .enterbutton
   {
+    user-select: none;
     opacity: 0;
     font-family: Montserrat;
     cursor: pointer;
@@ -86,23 +109,73 @@
   }
   .enterbutton2
   {
+    user-select: none;
         transition: all 1s linear;
-        /* opacity: 0; */
+        opacity: 0.5;
         font-family: Ultra;
         font-size: 1.2rem;
         cursor: pointer;
         position: absolute;
-        /* letter-spacing: 2px; */
+        letter-spacing: 2px;
         top:85%;
         left: 50%;
         transform: translateX(-50%);
         z-index: 200;
+        padding: 5px;
   }
   .enterbutton2:hover
   {
-    border-bottom: 1px solid white;
-    letter-spacing: 2px;
+    font-weight: 700 !important;
+    letter-spacing: 5px;
+    background: none;
+    opacity: 1;
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    transition: all 0.3s ease 0s;
   }
+  /*Form
+  ----------------------------------------------*/
+  form {
+    width:30%;
+  position: absolute;
+  top: 20%;
+  left:50%;
+  transform: translateX(-50%);
+  color: white;
+z-index: 400;}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  border-radius: 25px;
+  padding: 12px 20px;
+  margin: 20px 0;
+  display: inline-block;
+  border  : 1px solid #ccc;
+  box-sizing: border-box;
+  color:white;
+  background:none;
+  outline: none;
+}
+
+button {
+  background-color: #fc4445;
+  border-radius: 5px;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.container {
+  padding: 16px;
+}
+
 
 /* Stag
   ---------------------------------------------- */
