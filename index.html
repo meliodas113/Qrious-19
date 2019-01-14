@@ -17,17 +17,17 @@
   <div class="text-container">
     <h1 class= "title1" id ="text">Qrious</h1>
   </div>
-  <a id="linklogin">
+  <a id="linklogin" onclick="myFunction()">
     <h3 class="enterbutton" id="mybutton">ENTER<i class="fa fa-play" style="font-size:0.8rem;"></i></h3>
  </a>
-<form>
+<form id="form">
 
   <div class="container">
     <label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="uname" required>
+    <input type="text" placeholder="Enter Username" name="uname" required onfocus="this.placeholder =''" onblur="this.placeholder='Enter Username'">
 
     <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
+    <input type="password" placeholder="Enter Password" name="psw" required onfocus="this.placeholder =''" onblur="this.placeholder='Enter Password'">
 
     <button type="submit">Login</button>
 

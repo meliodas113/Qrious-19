@@ -1,4 +1,9 @@
-
+function myFunction()
+{
+    $(".text-container").fadeOut(500);
+    $("#linklogin").fadeOut(500);
+    $("#form").fadeIn(1000);
+}
 
 function textanime()
 {
@@ -14,8 +19,3 @@ function textanime()
     },12000);
 }
 textanime();
-$("#linklogin").click(function (e) {
-    e.preventDefault();
-    $("body:before").css("z-index",500);
-    $("body:before").css("opacity",1);
-});

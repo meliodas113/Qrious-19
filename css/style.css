@@ -15,24 +15,6 @@
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-timing-function: linear;
   }
-  body:before
-  {
-    margin: 0;
-    content: "";
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    background-color: black;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    opacity:0;
-    -webkit-filter:blur(8px);
-    -moz-filter:blur(8px);
-    filter:blur(8px);
-    z-index: 200;
-  }
 /* Background gradients
   ---------------------------------------------- */
   #sky{
@@ -135,13 +117,20 @@
   }
   /*Form
   ----------------------------------------------*/
+  ::placeholder
+  {
+    color: white;
+  }
   form {
+    display: none;
     width:30%;
   position: absolute;
-  top: 20%;
+  top: 50%;
   left:50%;
-  transform: translateX(-50%);
+  transform: translate(-50%,-50%);
   color: white;
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 8px;
 z-index: 400;}
 
 input[type=text], input[type=password] {
