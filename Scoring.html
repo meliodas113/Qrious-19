@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+</head>
+<body>
+  <div id="options">
+    <input type="radio" id="r1" name="option" value="a"> a
+    <input type="radio" id="r2" name="option" value="b"> b
+    <input type="radio" id="r3" name="option" value="c"> c 
+    <input type="radio" id="r4" name="option" value="d" checked="checked"> d
+  </div>
+    
+<button type="button" onclick="Checking()">Sumbit</button>
+
+    
+</body>
+<script>
+    var options = document.getElementById('options').value;
+var option_value, selected_value;
+if(options =='a'){
+    option_value = document.getElementById('r1').value;
+
+}else if(options =='b'){
+    option_value = document.getElementById('r2').value;
+
+}else if(options =='c'){
+    option_value = document.getElementById('r3').value;
+}
+else if(options =='d'){
+    option_value = document.getElementById('r4').value;
+} 
+
+function Checking() {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+          document.getElementById("option_value").innerHTML =
+          this.responseText;
+        }
+    };
+      xhttp.open("GET", "cc", true);
+      xhttp.send();
+      ScoreUpdate();
+    }
+    function ScoreUpdate() {
+        
+    }
+    </script>
+    
+</html>
