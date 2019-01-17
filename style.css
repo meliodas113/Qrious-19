@@ -1,67 +1,158 @@
 
+*{
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
 body{
-    background-color: rgba(2, 0, 34, 0.884);
+    /* background-color:   #001858  ; */
+    overflow: hidden;
+    margin: 0%;
+    padding: 0%;
+    font-size: 15px;
+    background:url("Gaming bg.jpg");
+    background: cover;
+    background-repeat: no-repeat;
+
+
+
 }
+#header {
+    
+    background-color:  #00113f;
+    color: blanchedalmond;
+    position: absolute;
+    width: 100% ;
+    /* height: 15%; */
+    font-size : 30px;
+    font-family: 'Kalam', cursive;
+}
+.question
+{
+    margin-left: 5%;
+}
+
 #color1 {
     position: absolute;
-    margin-left: 17.5%;  
-    margin-top: 5%;
-    width: 65%;
-    height: 7%;
+
+    left: 10%;
+    top: 30%;
+    width: 30%;
+    height: 5%;
     border-radius : 5px;
-    padding: 2%;
+    padding: 2.5%;
 
 }
 #color2 {
     position: absolute;
-    margin-left: 17.5%;
-    margin-top: 15%;
-    width: 65%;
-    height: 12%;
+    right: 10%;
+    top: 30%;
+    width:30%;
+    height: 5%;
     border-radius : 5px;
-
+    padding: 2.5%;
 }
 #color3 {
     position: absolute;
-    margin-left: 17.5%;
-    margin-top: 25%;    
-    width: 65%;
-    height: 12%;
+    left: 10%;
+    top: 57%;
+    width: 30%;
+    height: 5%;
     border-radius : 5px;
+    padding: 2.5%;
 
 }
 #color4 {
     position: absolute;
-    margin-left: 17.5%;
-    margin-top: 35%;
-    width: 65%;
-    height: 12%;
+    right: 10%;
+    top: 57%;
+    width: 30%;
+    height: 5%;
     border-radius : 5px;
+    padding: 2.5%;
+
 
 
 }
 div {
-    background-color:  rgba(236, 236, 236, 0.747);
+    background-color: #8279da;
+    font-family: 'Anton', sans-serif;
+    font-size: 17px; 
+    overflow: visible;
+    font-family: 'Kalam', cursive;
 
 }
 div:hover { 
-    background-color: rgba(252, 14, 14, 0.904);
+    background-color: #dfe3ee;
     transition: 0.3s;
     transform-style: inherit;
 }
 
-button {
+.Submit {
     position: absolute;
-    margin-top: 45%;
-    margin-left: 25%;
-    width: 50%;
-    background-color: rgb(78, 226, 127);
-    border-radius : 5px;
+    top:85%;
+    left: 50%;
+    transform: translate(-50%,0);
+    width: 30%;
+    background-color:  #c9af3f;
+    border: none;
     height: 9%;
+    outline: none;
+    border-radius: 3px;
+    box-shadow: 0 0 24px 4px rgba(0,0,0,0.5);
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size:15px;
 }
-#header {
-    background-color: rgba(0, 0, 0, 0.623);
-    color: blanchedalmond;
-    width: 100%;;
-    height: 30%;
+.Submit:hover{
+    background-color: rgb(19, 74, 228);
+    transform-style: inherit;
+    transition: 0.5s;
+}
+.prev {
+    transition: background-color .5s ease;
+    cursor: pointer;
+    position: absolute;
+    top: 60%;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+
+    overflow: hidden;
+    background-color:  none;
+    text-decoration: none;
+
+}
+.prev:hover
+{
+    background-color: rgb(0, 173, 92);
+}
+.next:hover
+{
+    background-color: rgb(0, 173, 92);
+}
+.next {
+    transition: background-color .5s ease;
+    cursor: pointer;
+    position: absolute;
+    top: 60%;
+    right: 0;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+
+    overflow: hidden;
+    background-color:  none;
+    text-decoration: none;
+
+
 }
