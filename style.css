@@ -4,7 +4,6 @@
     -moz-osx-font-smoothing: grayscale;
   }
 body{
-    /* background-color:   #001858  ; */
     overflow: hidden;
     margin: 0%;
     padding: 0%;
@@ -22,10 +21,19 @@ body{
     color: blanchedalmond;
     position: absolute;
     width: 100% ;
-    /* height: 15%; */
     font-size : 30px;
     font-family: 'Kalam', cursive;
+    z-index: 2;
 }
+#overlay {
+    background-color: rgba(0, 0, 0, 0.4);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+  }
 .question
 {
     margin-left: 5%;
@@ -40,6 +48,7 @@ body{
     height: 5%;
     border-radius : 5px;
     padding: 2.5%;
+    z-index: 3;
 
 }
 #color2 {
@@ -50,6 +59,8 @@ body{
     height: 5%;
     border-radius : 5px;
     padding: 2.5%;
+    z-index: 3;
+
 }
 #color3 {
     position: absolute;
@@ -59,6 +70,7 @@ body{
     height: 5%;
     border-radius : 5px;
     padding: 2.5%;
+    z-index: 3;
 
 }
 #color4 {
@@ -69,20 +81,20 @@ body{
     height: 5%;
     border-radius : 5px;
     padding: 2.5%;
-
-
+    z-index: 3;
 
 }
 div {
-    background-color: #8279da;
+    background-color: rgba(0, 0, 0, 0.5);
     font-family: 'Anton', sans-serif;
     font-size: 17px; 
     overflow: visible;
     font-family: 'Kalam', cursive;
+    color: ghostwhite;
 
 }
 div:hover { 
-    background-color: #dfe3ee;
+    background-color: #228e8d;
     transition: 0.3s;
     transform-style: inherit;
 }
@@ -93,7 +105,7 @@ div:hover {
     left: 50%;
     transform: translate(-50%,0);
     width: 30%;
-    background-color:  #c9af3f;
+    background-color: rgba(34, 115, 127,0.7);
     border: none;
     height: 9%;
     outline: none;
@@ -101,10 +113,11 @@ div:hover {
     box-shadow: 0 0 24px 4px rgba(0,0,0,0.5);
     font-family: 'Montserrat', sans-serif;
     color: white;
-    font-size:15px;
+    font-size:20px;
+    z-index: 3;
 }
 .Submit:hover{
-    background-color: rgb(19, 74, 228);
+    background-color: rgb(9, 74, 228);
     transform-style: inherit;
     transition: 0.5s;
 }
@@ -121,7 +134,7 @@ div:hover {
     border-radius: 0 3px 3px 0;
     user-select: none;
     -webkit-user-select: none;
-
+    z-index: 4;
     overflow: hidden;
     background-color:  none;
     text-decoration: none;
@@ -149,10 +162,22 @@ div:hover {
     border-radius: 0 3px 3px 0;
     user-select: none;
     -webkit-user-select: none;
-
+    z-index: 4;
     overflow: hidden;
     background-color:  none;
     text-decoration: none;
 
 
+}
+#submitting{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    background-color: rgba(53, 53, 53,1);
+    transform: translate(-50%,0);
+    width: 30%;
+    border-radius: 5px;
+    font-size: 35px;
+
+ 
 }
