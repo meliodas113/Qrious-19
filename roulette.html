@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
+    
+</head>
+<body>
+        <div class="main">
+            <nav>
+                <a id="leadlink" onclick="openlead()">Leaderboard</a>
+            </nav>
+                <button type="button" class="btn" id="spin"><span class="btn-label">Spin</span></button>
+                <button type="button" class="btn btn-reset" id="reset"><span class="btn-label">Go To Level</span></button> 
+                <div class="plate" id="plate">
+                  <ul class="inner">
+                    <li class="number"><label><input type="radio" name="pit" value="32" /><span class="pit">32</span></label></li>
+                    <li class="number"><label><input type="radio" name="pit" value="15" /><span class="pit">15</span></label></li>
+                    <li class="number"><label><input type="radio" name="pit" value="19" /><span class="pit">19</span></label></li>
+                    <li class="number"><label><input type="radio" name="pit" value="4" /><span class="pit">4</span></label></li>
+                    <li class="number"><label><input type="radio" name="pit" value="21" /><span class="pit">21</span></label></li>
+                    <li class="number"><label><input type="radio" name="pit" value="2" /><span class="pit">2</span></label></li>
+                    <li class="number"><label><input type="radio" name="pit" value="25" /><span class="pit">25</span></label></li>
+                    <li class="number"><label><input type="radio" name="pit" value="17" /><span class="pit">17</span></label></li>
+                    <li class="number"><label><input type="radio" name="pit" value="34" /><span class="pit">34</span></label></li>
+                    <li class="number"><label><input type="radio" name="pit" value="6" /><span class="pit">6</span></label></li>
+                    <li class="number"><label><input type="radio" name="pit" value="27" /><span class="pit">27</span></label></li>
+                    <li class="number"><label><input type="radio" name="pit" value="13" /><span class="pit">13</span></label></li>
+                    <li class="number"><label><input type="radio" name="pit" value="36" /><span class="pit">36</span></label></li>
+                    <li class="number"><label><input type="radio" name="pit" value="11" /><span class="pit">11</span></label></li>
+                    <li class="number"><label><input type="radio" name="pit" value="30" /><span class="pit">30</span></label></li>
+                    <li class="number"><label><input type="radio" name="pit" value="8" /><span class="pit">8</span></label></li>
+                    <li class="number"><label><input type="radio" name="pit" value="23" /><span class="pit">23</span></label></li>
+                    <li class="number"><label><input type="radio" name="pit" value="10" /><span class="pit">10</span></label></li>
+                    <li class="number"><label><input type="radio" name="pit" value="5" /><span class="pit">5</span></label></li>
+                    <li class="number"><label><input type="radio" name="pit" value="24" /><span class="pit">24</span></label></li>
+                    <li class="number"><label><input type="radio" name="pit" value="16" /><span class="pit">16</span></label></li>
+                    <li class="number"><label><input type="radio" name="pit" value="33" /><span class="pit">33</span></label></li>
+                    <li class="number"><label><input type="radio" name="pit" value="1" /><span class="pit">1</span></label></li>
+                    <li class="number"><label><input type="radio" name="pit" value="20" /><span class="pit">20</span></label></li>
+                    <li class="number"><label><input type="radio" name="pit" value="14" /><span class="pit">14</span></label></li>
+                    <li class="number"><label><input type="radio" name="pit" value="31" /><span class="pit">31</span></label></li>
+                    <li class="number"><label><input type="radio" name="pit" value="9" /><span class="pit">9</span></label></li>
+                    <li class="number"><label><input type="radio" name="pit" value="22" /><span class="pit">22</span></label></li>
+                    <li class="number"><label><input type="radio" name="pit" value="18" /><span class="pit">18</span></label></li>
+                    <li class="number"><label><input type="radio" name="pit" value="29" /><span class="pit">29</span></label></li>
+                    <li class="number"><label><input type="radio" name="pit" value="7" /><span class="pit">7</span></label></li>
+                    <li class="number"><label><input type="radio" name="pit" value="28" /><span class="pit">28</span></label></li>
+                    <li class="number"><label><input type="radio" name="pit" value="12" /><span class="pit">12</span></label></li>
+                    <li class="number"><label><input type="radio" name="pit" value="35" /><span class="pit">35</span></label></li>
+                    <li class="number"><label><input type="radio" name="pit" value="3" /><span class="pit">3</span></label></li>
+                    <li class="number"><label><input type="radio" name="pit" value="26" /><span class="pit">26</span></label></li>
+                    <li class="number"><label><input type="radio" name="pit" value="0" /><span class="pit">0</span></label></li>
+                  </ul>
+                  <div class="data">
+                    <div class="data-inner">
+                      <div class="mask"></div>
+                      <div class="result">
+                        <div class="result-number">00</div>
+                        <div class="result-color">red</div>        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+        </div>
+
+            <div id="leaderboard">
+                <div class="leadhead"><h1>
+                        <svg class="ico-cup">
+                          <use xlink:href="#cup"></use>
+                        </svg>
+                        Qrious Leaderboard
+                      </h1></div>
+                <ol>
+                  <li>
+                    <mark>Name 1</mark>
+                    <small>315</small>
+                  </li>
+                  <li>
+                    <mark>Name 2</mark>
+                    <small>301</small>
+                  </li>
+                  <li>
+                    <mark>Name 3</mark>
+                    <small>292</small>
+                  </li>
+                  <li>
+                    <mark>Name 4</mark>
+                    <small>245</small>
+                  </li>
+                  <li>
+                    <mark>Name 4</mark>
+                    <small>203</small>
+                  </li>
+                </ol>
+              </div>
+              
+              
+              <svg style="display: none;">
+                <symbol id="cup" x="0px" y="0px"
+                   width="25px" height="26px" viewBox="0 0 25 26" enable-background="new 0 0 25 26" xml:space="preserve">
+              <path fill="#F26856" d="M21.215,1.428c-0.744,0-1.438,0.213-2.024,0.579V0.865c0-0.478-0.394-0.865-0.88-0.865H6.69
+                  C6.204,0,5.81,0.387,5.81,0.865v1.142C5.224,1.641,4.53,1.428,3.785,1.428C1.698,1.428,0,3.097,0,5.148
+                  C0,7.2,1.698,8.869,3.785,8.869h1.453c0.315,0,0.572,0.252,0.572,0.562c0,0.311-0.257,0.563-0.572,0.563
+                  c-0.486,0-0.88,0.388-0.88,0.865c0,0.478,0.395,0.865,0.88,0.865c0.421,0,0.816-0.111,1.158-0.303
+                  c0.318,0.865,0.761,1.647,1.318,2.31c0.686,0.814,1.515,1.425,2.433,1.808c-0.04,0.487-0.154,1.349-0.481,2.191
+                  c-0.591,1.519-1.564,2.257-2.975,2.257H5.238c-0.486,0-0.88,0.388-0.88,0.865v4.283c0,0.478,0.395,0.865,0.88,0.865h14.525
+                  c0.485,0,0.88-0.388,0.88-0.865v-4.283c0-0.478-0.395-0.865-0.88-0.865h-1.452c-1.411,0-2.385-0.738-2.975-2.257
+                  c-0.328-0.843-0.441-1.704-0.482-2.191c0.918-0.383,1.748-0.993,2.434-1.808c0.557-0.663,1-1.445,1.318-2.31
+                  c0.342,0.192,0.736,0.303,1.157,0.303c0.486,0,0.88-0.387,0.88-0.865c0-0.478-0.394-0.865-0.88-0.865
+                  c-0.315,0-0.572-0.252-0.572-0.563c0-0.31,0.257-0.562,0.572-0.562h1.452C23.303,8.869,25,7.2,25,5.148
+                  C25,3.097,23.303,1.428,21.215,1.428z M5.238,7.138H3.785c-1.116,0-2.024-0.893-2.024-1.99c0-1.097,0.908-1.99,2.024-1.99
+                  c1.117,0,2.025,0.893,2.025,1.99v2.06C5.627,7.163,5.435,7.138,5.238,7.138z M18.883,21.717v2.553H6.118v-2.553H18.883
+                  L18.883,21.717z M13.673,18.301c0.248,0.65,0.566,1.214,0.947,1.686h-4.24c0.381-0.472,0.699-1.035,0.947-1.686
+                  c0.33-0.865,0.479-1.723,0.545-2.327c0.207,0.021,0.416,0.033,0.627,0.033c0.211,0,0.42-0.013,0.627-0.033
+                  C13.195,16.578,13.344,17.436,13.673,18.301z M12.5,14.276c-2.856,0-4.93-2.638-4.93-6.273V1.73h9.859v6.273
+                  C17.43,11.638,15.357,14.276,12.5,14.276z M21.215,7.138h-1.452c-0.197,0-0.39,0.024-0.572,0.07v-2.06
+                  c0-1.097,0.908-1.99,2.024-1.99c1.117,0,2.025,0.893,2.025,1.99C23.241,6.246,22.333,7.138,21.215,7.138z"/>
+                    </symbol>
+              </svg>
+        </div>
+
+                <!-- <div class="previous-results">
+                  <ol class="previous-list">
+                    <li class='visuallyhidden placeholder'>No results yet.</li>
+                  </ol>
+                </div>
+              </div> -->
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        <script  src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+        <script src="script.js"></script>
+</body>
+</html>
