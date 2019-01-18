@@ -16,8 +16,8 @@ body{
 
 }
 #header {
-    
-    background-color:  #00113f;
+
+    background-color:  #000d14;
     color: blanchedalmond;
     position: absolute;
     width: 100% ;
@@ -87,13 +87,13 @@ body{
 div {
     background-color: rgba(0, 0, 0, 0.5);
     font-family: 'Anton', sans-serif;
-    font-size: 17px; 
+    font-size: 17px;
     overflow: visible;
     font-family: 'Kalam', cursive;
     color: ghostwhite;
 
 }
-div:hover { 
+div:hover {
     background-color: #228e8d;
     transition: 0.3s;
     transform-style: inherit;
@@ -176,8 +176,12 @@ div:hover {
     background-color: rgba(53, 53, 53,1);
     transform: translate(-50%,0);
     width: 30%;
-    border-radius: 5px;
+    border-radius: 10px;
+    border-color:rgb(0, 0, 0);
     font-size: 35px;
+    border-width: 2px;
+    padding: 5px;
 
- 
+
+
 }
