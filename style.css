@@ -83,7 +83,6 @@ body{
     border-radius : 5px;
     padding: 2.5%;
     z-index: 3;
-
 } 
 .options [name="option"]:hover
 {
