@@ -97,6 +97,9 @@ div:hover {
     transition: 0.3s;
     transform-style: inherit;
 }
+div:active {
+    
+}
 
 .Submit {
     position: absolute;
