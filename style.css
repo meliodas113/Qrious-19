@@ -8,11 +8,9 @@ body{
     margin: 0%;
     padding: 0%;
     font-size: 15px;
-    background:url("Gaming bg.jpg");
+    /* background:url("Gaming bg.jpg"); */
     background: cover;
     background-repeat: no-repeat;
-
-
 
 }
 #header {
@@ -33,6 +31,8 @@ body{
     height: 100%;
     position: absolute;
     z-index: 1;
+    background-image: linear-gradient(to bottom, #30cfd0 0%, #330867 100%);
+
   }
 .question
 {
@@ -194,4 +194,4 @@ div:hover {
     border-radius: 50%;
   } */
   
-}
+
