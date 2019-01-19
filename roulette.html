@@ -13,29 +13,28 @@
     }
     .second{
     	animation: rotate 10s ease-out 1;
-    	animation-fill-mode: both;
+    	animation-fill-mode: both; 
     }
-    @keyframes rotate
-    {
-    	0% { transform: rotate(0deg); }
+    @keyframes rotate {
+    	/*50% { transform: rotate(360deg); }*/
     	100% { transform: rotate(1440deg); }
     }
     #img{
     	position: absolute;
-    	top: 40%;
-    	left: 40%;
+    	top: 20%;
+    	left: 30%;
     	border-radius: 50%;
     }
     .but1 {
     	position: absolute;
     	top: 75%;
-    	left: 40%;
+    	left: 37%;
     	border-radius: 10%;
     }
     .but2 {
     	position: absolute;
     	top: 75%;
-    	left: 50%;
+    	left: 55%;
     	border-radius: 10%;
     }
 	</style>
@@ -45,13 +44,14 @@
 		document.getElementById('img').classList.add('first');
   		}
   		function stop() {
+  			// document.getElementById('img').classList.remove('first');
   			document.getElementById('img').classList.add('second');
   		}
 	</script>
 </head>
-<body>
+<body bgcolor="black">
 	<button onclick="start()" class="but1">Start</button>
 	<button onclick="stop()" class="but2">Stop</button>
-	<img id="img" src="images/circle.gif" width="200px" height="200px">
+	<img id="img" src="images/roullete.svg" width="400px" height="400px">
 </body>
 </html>
