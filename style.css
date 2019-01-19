@@ -31,9 +31,8 @@ body{
     height: 100%;
     position: absolute;
     z-index: 1;
-    background-image: linear-gradient(to bottom, #30cfd0 0%, #330867 100%);
-
-  }
+    /* background-image: linear-gradient(to bottom, #30cfd0 0%, #330867 100%); */
+    background-image: linear-gradient(-20deg, #001136b3 100%, #1694b1 0%);  }
 .question
 {
     margin-left: 5%;
