@@ -2,56 +2,16 @@
 <html>
 <head>
 	<title>Roulette</title>
-	<style>
-	.first{
-		animation:spin 1.2s linear infinite;
-		animation-fill-mode: both;
-	}
-	@keyframes spin {
-    	0% { transform: rotate(0deg); }
-    	100% { transform: rotate(360deg); }
-    }
-    .second{
-    	animation: rotate 10s ease-out 1;
-    	animation-fill-mode: both;
-    }
-    @keyframes rotate
-    {
-    	0% { transform: rotate(0deg); }
-    	100% { transform: rotate(1440deg); }
-    }
-    #img{
-    	position: absolute;
-    	top: 40%;
-    	left: 40%;
-    	border-radius: 50%;
-    }
-    .but1 {
-    	position: absolute;
-    	top: 75%;
-    	left: 40%;
-    	border-radius: 10%;
-    }
-    .but2 {
-    	position: absolute;
-    	top: 75%;
-    	left: 50%;
-    	border-radius: 10%;
-    }
-	</style>
+	<link rel="stylesheet" type="text/css" href="roulette.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-	<script type="text/javascript">
-		function start() {
-		document.getElementById('img').classList.add('first');
-  		}
-  		function stop() {
-  			document.getElementById('img').classList.add('second');
-  		}
-	</script>
 </head>
 <body>
-	<button onclick="start()" class="but1">Start</button>
-	<button onclick="stop()" class="but2">Stop</button>
-	<img id="img" src="piechart_roulette.gif" width="200px" height="200px">
+	<div class="bg"></div> 
+	<div class="overlay">
+	<img src="Images/roullete.svg" id="roulette">
+	<button class="but1" onclick="spin()">Start</button>
+	</div>
 </body>
+<script type="text/javascript" src="roulette.js"></script>]
 </html>
