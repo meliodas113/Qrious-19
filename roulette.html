@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<title>Roulette</title>
 	<style>
 	.first{
@@ -45,13 +46,13 @@
 		document.getElementById('img').classList.add('first');
   		}
   		function stop() {
-  			document.getElementById('img').classList.add('second');
+  			$("#img").stop();
   		}
 	</script>
 </head>
 <body>
 	<button onclick="start()" class="but1">Start</button>
 	<button onclick="stop()" class="but2">Stop</button>
-	<img id="img" src="piechart_roulette.gif" width="200px" height="200px">
+	<img id="img" src="piechart_roulette.svg" width="200px" height="200px">
 </body>
 </html>
