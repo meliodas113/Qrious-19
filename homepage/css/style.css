@@ -1,5 +1,6 @@
 body {
   overflow: hidden;
+  user-select: none;
 }
 .loaded .bg {
   opacity: 1;
@@ -49,21 +50,16 @@ body {
   font-family: Roboto;
   margin-top: 15%;
 }
-.g-signin2
+#chakra
 {
-
-    position: absolute;
-    top: 80%;
-    left: 45%;
-    transform: translate(-50%,-50%);
-    z-index: 4000;
+  position: absolute;
+  z-index: 4000;
+  top:15%;
+  left:65%;
 }
-.data
-{
-    display: none;
-    position: absolute;
+#customBtn {
+font-family: Arial, Helvetica, sans-serif;
 }
-#my-signin2
-{
-  background-color: black;
+#customBtn:hover {
+  cursor: pointer;
 }
