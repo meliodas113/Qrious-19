@@ -1,30 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Qrious</title>
 	<style>
+   *
+   {
+      margin: 0;
+      padding: 0;
+   }
 body, html { 
    height: 100%;
    margin: 0;
    overflow: hidden;
 }
-.bg{
-   background:url(mythology_background.jpg);
-   background-size: cover;
-   background-position: center;
-   height: 100%;
-   background-repeat : no-repeat;
-}
-.overlay
+
+/*.overlay
 {
 	height: 100%;
 	width: 100%;
-	background-color: rgba(0,0,0,0.3);
+	background-color: rgba(0,0,0,0.7);
 	z-index: 100;
 	position: absolute;
 	top: 0;
 	left: 0;
-}
+}*/
 .card
 {
 	width: 80%;
@@ -43,22 +43,73 @@ body, html {
    }
    h6{
    	font-family: arhaic romanesc;
-   	font-size: 150px;
-   	margin-top: 0px;
-   	margin-left: 7%; 
-   	color: goldenrod; 
-   	margin-bottom: 10px;
-   	-webkit-text-stroke:0.3px black;
+      position: absolute;
+      top: 0vh;
+      left: -4vw;
+   	font-size: 10vw;
+      text-align: center;
+   	color: #CC25BC;
+    -webkit-text-stroke: 1px #4C093E;
    }
+   background-image
+{
+   position: absolute;
+   top: 0;
+   left: 0;
+   transform: scale(1.2);
+}
+
+   button {
+   	background-color: transparent;
+      border: 3px solid #D6A009;
+   	font-size: 4.5vw;
+   	position: absolute;
+   	left: 8vw;
+   	top: 50vh;
+   	border-radius: 20px;
+    padding: 10px;
+   	font-family: arhaic romanesc;
+      color: #a14d0c;
+   }
+   button:hover
+   {
+      border: 3px solid #D6A009;
+      cursor: pointer;
+      animation: colorChange 0.5s linear;
+      animation-fill-mode: forwards;
+   }
+
+   @keyframes colorChange
+   {
+      100% {
+         color: #D6A009;
+         border: 3px solid #a14d0c;
+      }
+     @media only screen and (min-width: 800px) {
+      body {
+         background-image: url('Images/mythology.svg');
+         background-repeat: no-repeat;
+         height: 100vh;
+         width: 100vw;
+         background-size: cover;
+   }
+ }
+   @media only screen and (max-width: 800px) {
+  body { 
+     background-image: url('Images/mythology_mobile.svg');
+     background-repeat: no-repeat;
+     height: 100vh;
+     width: 100vw;
+     background-size: cover;
+  }
+}
+
 </style>
 </head>
 <body>
-	<div class="bg"></div>
-
-	<div class="overlay">
 		<div class="card">
 			<h6>Mythology</h6>
+			<button onclick=()"./">Jump in! </button>
 		</div>
-	</div>
 </body>
 </html>
