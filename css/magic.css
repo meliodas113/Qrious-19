@@ -94,4 +94,26 @@ h6{
      width: 100vw;
      background-size: cover;
   }
+  h6{
+  font-family: harry;
+  font-size: 15vw;
+  position: absolute; 
+  top: 0vh; 
+  left: 10vw; 
+  color: #f5edc2;
+}
+button {
+    background-color: #f7c77e;
+    border: none;
+    font-size: 7vw;
+    position: absolute;
+    left: 0.7vw;
+    top: 40vh;
+    border-radius: 20px;
+    padding-top: 1vh;
+    padding-left: 1.3vw;
+    padding-right: 1.3vw;
+    font-family: harry;
+    color: #931406;
+   }
 }
