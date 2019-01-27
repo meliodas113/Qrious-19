@@ -17,6 +17,7 @@ $(document).ready(function () {
    });
    var counter = 0;
    document.getElementById('next').addEventListener('click', function(e){
+       $(".options").removeClass("selected");
        document.getElementById('ques').innerHTML = questions[counter].question;
        document.getElementById('option1').innerHTML = questions[counter].option1;
        document.getElementById('option2').innerHTML = questions[counter].option2;
@@ -38,6 +39,8 @@ $(document).ready(function () {
    });
    
    function SubmitOption() {
+      $(".options").removeClass("selected");
+      document.getElementById("next").click();
        var x = document.getElementsByClassName("selected")[0].innerHTML;
        console.log(x);
        
