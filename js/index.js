@@ -67,9 +67,8 @@ var googleUser = {};
     {$('#proceed-btn').css('transform', 'scale('+i+')');
       $(".chakra").css("transform",'scale('+i+')');
   }
-    $(".good").css("top","4%");
-    $(".logo").css("top","2%");
-    $(".logo1").css("top","2%");
+    $(".logo1").fadeIn("slow");
+    $(".logo").fadeIn("slow");
   }, 3000);
 
   //----------------------------------------

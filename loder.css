@@ -232,8 +232,8 @@ color:#ccc;
 {   
     width: 60px;
     height: 60px;
-    background-image: url(39666368.jpg);
-    background-position: center center;
+    background-image: url("../Images/39666368.jpg");
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 10px;
@@ -246,7 +246,7 @@ color:#ccc;
 {
     width: 60px;
     height: 60px;
-    background-image: url(41801914_1837561986332182_2516568626039881728_n.jpg);
+    background-image: url(../Images/41801914_1837561986332182_2516568626039881728_n.jpg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
