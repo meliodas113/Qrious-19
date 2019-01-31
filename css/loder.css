@@ -370,7 +370,7 @@ font-family: 'Baloo Thambi', cursive;
   position:relative;
   top:0px;
   display:block;
-  background:#1a1a1a;
+  background:#ffffff;
   width:30px;
   height:5px;
   margin:5px 0px;
@@ -442,11 +442,3 @@ font-family: 'Baloo Thambi', cursive;
 
 }
 
-/*/@media (max-height:  700px)
-{
-  .final
-  {
-    position: absolute;
-    top: 10px;
-  }
-}
