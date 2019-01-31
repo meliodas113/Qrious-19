@@ -109,8 +109,8 @@ function toggleFullScreen() {
   }
 }
 $(document).ready(function(){
-  $('.fsbtn').click(function(){
-    $('.fsbtn').toggleClass('active');
+  $('.full').click(function(){
+    $('.full').toggleClass('active');
     $('.close').toggleClass('active');
 
 

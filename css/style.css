@@ -144,7 +144,7 @@ body {
 
 
 
-.fsbtn
+/* .fsbtn
  {
    height: 60px;
    width: 60px;
@@ -162,11 +162,50 @@ body {
    padding-bottom: 1%;
    padding-left: 1%;
    padding-right: 1%; */
-   padding:0px 8px ;
+   /* padding:0px 8px ;
    border-radius: 50%;
    margin: auto;
+} */ 
+
+.fsbtn
+ {
+   height: 60px;
+   width: 60px;
+   position: absolute;
+   text-decoration: none;
+   font-size: 30px;
+   margin: auto;
+   color: rgb(43, 39, 39);
+   z-index: 500000;
+   top: 2%;
+   left: 94%;
+   color: white;
+   background-color: rgba(90, 32, 134,0.4);
+   padding-top:7px;
+   padding-bottom: 5px;
+   padding-left: 2px;
+   padding-right: 4px;
+   
+   border-radius: 50%;
+   margin: auto;
+   text-align: center;
 }
 
+.full a
+{
+  transform: rotate(45deg);
+}
+
+.full a:hover
+{
+  text-decoration: none;
+  color: white;
+}
+
+.full .close
+{
+  font-size: 100px;
+}
 
 .logo
 {
@@ -204,6 +243,22 @@ body {
 
 }
 
+.full .close
+{
+  text-decoration: none;
+  display: none;
+  color: white;
+  font-size: 25px;
+  padding-top:15px;
+  padding-bottom: 10px;
+  padding-left: 0px;
+  padding-right: 0px;
+  
+  z-index: 500000;
+  transform: rotate(0);
+
+}
+
 .close.active
 {
   display: block;
@@ -229,7 +284,7 @@ body {
   transform: rotate(45deg);
 
 }
-.good.active .open
+.full.active .open
 {
   display: none;
 }
@@ -451,7 +506,7 @@ body {
     background-repeat: no-repeat;
     border-radius: 10px;
     position: absolute;
-    left:87% ;
+    left:70% ;
     top: 2%;
     z-index: 500000;
     opacity: 0.6;
@@ -538,7 +593,7 @@ body {
      margin: auto;
      color: white;
      z-index: 500000;
-     top: 10%;
+     top: 1%;
      left: 87%;
      color: white;
      background-color: rgba(90, 32, 134,0.4);
