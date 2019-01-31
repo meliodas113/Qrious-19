@@ -17,7 +17,8 @@
 }
 body {
   overflow:hidden;
-  background-color: #173F5F;
+  margin:0;
+  border:none;
 }
 
 
