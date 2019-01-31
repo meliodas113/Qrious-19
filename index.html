@@ -680,7 +680,14 @@
 	<script  src="js/index.js"></script>
 	<!-- <script>startApp();</script> -->
 
-
+<script>
+        window.addEventListener('resize', function(){
+             if(screen.width === window.innerWidth){
+                $('.final').toggleClass('active');
+                $('.close').toggleClass('active');
+  }
+});
+</script>
 
 </body>
 

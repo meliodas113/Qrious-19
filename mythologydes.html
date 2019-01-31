@@ -105,13 +105,12 @@ function toggleFullScreen() {
     }
   }
 }
-$(document).ready(function(){
-     $('.final').click(function(){
-       $('.final').toggleClass('active');
-       $('.close').toggleClass('active');
-
-
-     })
+window.addEventListener('resize', function(){
+             if(screen.width === window.innerWidth){
+                $('.final').toggleClass('active');
+                $('.close').toggleClass('active');
+  }
+});
 
 
   })
