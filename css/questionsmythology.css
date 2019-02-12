@@ -45,12 +45,13 @@ html,body
     margin-left:5vw;
     background-color:rgb(105, 67,105);
     border-radius: 15px;
-    line-height: 8vh;
-    vertical-align:middle;
     font-family:Helvetica;
     padding:1.5vw;
     justify-content: center;
-z-index: 3;
+    z-index: 3;
+align-items: center;
+border:0.5px solid whitesmoke;
+
 }
 
 .options
@@ -60,12 +61,13 @@ z-index: 3;
     height: 10vh;
     width: 25vw;;
     border-radius: 15px;
-    vertical-align: middle;
-    line-height: 10vh;
     margin-top: 4vh;
     vertical-align: middle;
     justify-content: center;
 z-index: 3;
+align-items: center;
+border:0.5px solid whitesmoke;
+
 }
 #option1
 {
@@ -97,6 +99,8 @@ z-index: 3;
     border-radius: 15px;
     justify-content: center;
     z-index: 3;
+    border:0.5px solid whitesmoke;
+
 
 }
 .lowbtn p
@@ -116,21 +120,7 @@ z-index: 3;
   justify-content: space-around;
 
 }
-/*#prev
-{ 
-    margin-top:12vh;
-    margin-left:5vw;
-}
-#submit
-{
-    margin-top: -4vh;
-    margin-left:42.5vw;
-}
-#next
-{
-    margin-top: -16vh;
-    margin-left: 80vw;
-}*/.options:hover{
+.options:hover{
     background: rgba(181, 134, 144, 0.8);
     transition: inherit;
     transition-duration: 0.3s;
@@ -184,12 +174,13 @@ z-index: 3;
     height: 10vh;
     width: 92vw;
     border-radius: 15px;
-    line-height: 4vh;
-    display: flex;
+        display: flex;
     justify-content: center;
     align-items: center;
     margin: 3.5vh 5vw;
     z-index: 100;
+    border:0.5px solid whitesmoke;
+
     }
 .option1a, .option2b{
         height: 55vh;
@@ -205,7 +196,6 @@ z-index: 3;
     width: 92vw;
     background-color:rgb(181, 91, 145);
     border-radius: 15px;
-    line-height: 5vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -214,6 +204,8 @@ z-index: 3;
     margin-left: 4vw;
     padding: 3.5vw;
     z-index: 100;
+    border:0.5px solid whitesmoke;
+
     }
 .lowbtn{
     width: 25vw;
@@ -222,8 +214,11 @@ z-index: 3;
     background-color: rgba(181, 134, 167, 0.4);
     border-radius: 15px;
     margin-bottom: 2vh;
-    text-align: center;
-    line-height:10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:0.5px solid whitesmoke;
+
 }
 
 .yolo
@@ -237,30 +232,5 @@ z-index: 3;
 
 }
 
-/*#prev{
-    width: 22vw;
-    height: 10vh;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: rgba(181, 134, 167, 0.4);
-    border-radius: 15px;
-    margin-left: 4vh;
-    margin-top:0vh;
-
 }
-#next {
-    width: 22vw;
-    height: 10vh;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: rgba(181, 134, 167, 0.4);
-    border-radius: 15px;
-    margin-left: 40vh;
-    margin-bottom: 25 vh;
-    margin-top: -12vh;
-}
-#submit{
-    margin-top: -12vh;
-    margin-left: 21vh;
-}
-}*/
-
 

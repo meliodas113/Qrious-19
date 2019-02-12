@@ -55,12 +55,12 @@ html,body
     margin-left:5vw;
     background-color:#b8414a;
     border-radius: 15px;
-    line-height: 8vh;
-    vertical-align:middle;
     font-family:Helvetica;
-    padding:1.5vw;
     justify-content: center;
-z-index: 3;
+    z-index: 3;
+    align-items: center;
+    border:0.5px solid whitesmoke;
+
 }
 
 .options
@@ -70,12 +70,12 @@ z-index: 3;
     height: 10vh;
     width: 25vw;;
     border-radius: 15px;
-    vertical-align: middle;
-    line-height: 10vh;
     margin-top: 4vh;
-    vertical-align: middle;
+    align-items: center;
     justify-content: center;
-z-index: 30;
+    z-index: 30;
+    border:0.7px solid whitesmoke;
+
 }
 #option1
 {
@@ -103,10 +103,12 @@ z-index: 30;
     width: 15vw;
     height: 10vh;
     font-family: Arial, Helvetica, sans-serif;
-    background-color:rgba(212, 161, 95, 0.404);
+    background-color:#df9665;
     border-radius: 15px;
     justify-content: center;
     z-index: 3;
+    opacity:0.8;
+    border:0.7px solid whitesmoke;
 
 }
 .lowbtn p
@@ -115,21 +117,8 @@ z-index: 30;
     vertical-align: middle;
     margin-top: 4vh;
 }
-/* #prev
-{ 
-    margin-top:12vh;
-    margin-left:5vw;
-}
-#submit
-{
-    margin-top: -4vh;
-    margin-left:42.5vw;
-}
-#next
-{
-    margin-top: -16vh;
-    margin-left: 80vw; */
-}.options:hover{
+
+.options:hover{
     background:   rgb(177, 155, 129);
     transition: inherit;
     transition-duration: 0.3s;
@@ -148,7 +137,7 @@ z-index: 30;
     background: #ff9830ce;
 }
 
-
+}
 
 @media only screen and (max-width : 600px) {
 .container{
@@ -158,7 +147,6 @@ z-index: 30;
     position:absolute;
     height:100vh; 
     width: 100vw;
-    /* filter: blur(2px); */
 }
 .imgOverlay{
     position: absolute;
@@ -183,12 +171,13 @@ z-index: 30;
     height: 10vh;
     width: 92vw;
     border-radius: 15px;
-    line-height: 4vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 3.5vh 5vw;
     z-index: 100;
+    margin: 3.5vh 5vw;
+    border:0.7px solid whitesmoke;
+
     }
 .option1a, .option2b{
         height: 55vh;
@@ -204,25 +193,28 @@ z-index: 30;
     width: 92vw;
     background-color:#b8414a;
     border-radius: 15px;
-    line-height: 5vh;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family:Helvetica;
     font-size: 2.5vh;
-    margin-left: 4vw;
-    padding: 3.5vw;
     z-index: 100;
+    margin-left: 4vw;
+    padding:5px;
+    border:0.7px solid whitesmoke;
+
     }
 .lowbtn{
     width: 25vw;
     height: 10vh;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgba(212, 161, 95, 0.404);
+    background-color: #df9665;
     border-radius: 15px;
     margin-bottom: 2vh;
-    text-align: center;
-    line-height:10vh;
+    align-items: center;
+    border:0.7px solid whitesmoke;
+    display: flex;
+    justify-content: center;
 }
 .yolo
 {
@@ -234,32 +226,7 @@ z-index: 30;
   justify-content: space-around;
 
 }
-/* #prev{
-    width: 22vw;
-    height: 10vh;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color:  rgba(137,134,181,0.8);
-    border-radius: 15px;
-    margin-left: 4vh;
-    margin-top:0vh;
 
-}
-#next {
-    width: 22vw;
-    height: 10vh;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: rgba(137,134,181,0.8);
-    border-radius: 15px;
-    margin-left: 40vh;
-    margin-bottom: 25 vh;
-    margin-top: -12vh;
-}
-#submit{
-    margin-top: -12vh;
-    margin-left: 21vh;
-} */
-}
 .selected { background:#ff9830ce; }
 
-
-
+} 

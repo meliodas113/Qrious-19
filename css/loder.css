@@ -1,12 +1,24 @@
 
+@font-face
+{
+  font-family:'Baloo Thambi';
+  src: url("css/BalooThambi-Regular.ttf");
+}
+@font-face
+{
+  font-family:'ZCOOL KuaiLe';
+  src: url("css/ZCOOLKuaiLe-Regular.ttf");
+}
 * {
   margin:0px;
   padding:0px;
   box-sizing:border-box;
- 
+
 }
 body {
   overflow:hidden;
+  margin:0;
+  border:none;
 }
 
 
@@ -16,7 +28,7 @@ body {
   left:0px;
   width:200px;
   height:100vh;
-  
+
   text-align:center;
   transform-origin:left;
   transform:perspective(1200px) rotateY(90deg);
@@ -27,7 +39,7 @@ body {
   align-items: center;
   display: none;
 
-  
+
 }
 
 #sidebar ul li  {
@@ -97,13 +109,13 @@ color:#ccc;
   align-items: center;
   justify-content: flex-end;
 
-	
+
 }
 
 .good a
 {
    position: relative;
-	top: 1px;
+	top: 3px;
 	margin: 20px;
 	text-decoration: none;
 	font-size: 20px;
@@ -181,14 +193,14 @@ color:#ccc;
 .close.active
 {
   display: block;
-} 
+}
 
 .close.active
 {
   display: block;
   transform: rotate(0deg);
 
-} 
+}
 
 .final.active .open
 {
@@ -204,7 +216,7 @@ color:#ccc;
 	text-decoration: none;
 	font-size: 24px;
 	color: white;
-	
+
 	padding-top: 13px;
 	padding-bottom: 13px;
 	padding-left: 25px;
@@ -213,7 +225,7 @@ color:#ccc;
 }
 
 .bits
-{   
+{
 	position: absolute;
 	bottom:  10px;
 	right: 10px;
@@ -228,31 +240,31 @@ color:#ccc;
 
 
 .logo
-{   
+{
     width: 60px;
     height: 60px;
-    background-image: url(39666368.jpg);
-    background-position: center center;
+    background-image: url("Images/39666368.jpg");
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 10px;
     position: relative;
     left: -5px;
-    
+
 }
 
 .logo1
 {
     width: 60px;
     height: 60px;
-    background-image: url(41801914_1837561986332182_2516568626039881728_n.jpg);
+    background-image: url("Images/41801914_1837561986332182_2516568626039881728_n.jpg");
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 10px;
  }
 .overlay
-{       
+{
 	    font-family: sans-serif;
 	    position: absolute;
 	    top: 0;
@@ -279,7 +291,7 @@ color:#ccc;
 	color: #eee;
 	font-size: 30px;
 	text-decoration: none;
-	
+
 }
 
 .overlay .closeBtn
@@ -288,14 +300,14 @@ color:#ccc;
    top: 20px;
    right: 50px;
    font-size: 50px;
-	
+
 }
 
 .overlay .closeBtn:hover
 {
    color: white;
    transition: 0.2s all ease-in;
-	
+
 }
 
 .overlay__content a
@@ -322,18 +334,18 @@ font-family: 'Baloo Thambi', cursive;
 @media screen and (max-width: 700px)
 {
     .logo
-{   
-   
+{
+
     width: 40px;
     height: 40px;
-    
+
 }
 
 .logo1
 {
     width: 40px;
     height: 40px;
-    
+
  }
 
 .overlay__content a
@@ -358,7 +370,7 @@ font-family: 'Baloo Thambi', cursive;
   position:relative;
   top:0px;
   display:block;
-  background:#1a1a1a;
+  background:#ffffff;
   width:30px;
   height:5px;
   margin:5px 0px;
@@ -382,7 +394,7 @@ font-family: 'Baloo Thambi', cursive;
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  
+
 
 }
 
@@ -404,7 +416,7 @@ font-family: 'Baloo Thambi', cursive;
 .close.active
 {
   display: block;
-} 
+}
 
 .good.active .open
 {
@@ -430,11 +442,3 @@ font-family: 'Baloo Thambi', cursive;
 
 }
 
-/*/@media (max-height:  700px)
-{
-  .final
-  {
-    position: absolute;
-    top: 10px;
-  }
-}

@@ -157,7 +157,7 @@ color:#ccc;
 .final a
 {
   position: relative;
-  top: 1px;
+  top: -5px;
   margin: 20px;
   text-decoration: none;
   font-size: 20px;
@@ -173,10 +173,10 @@ color:#ccc;
 
 .final .open
 {
-  padding-top: 17px;
-  padding-bottom: 17px;
-  padding-left: 17px;
-  padding-right: 17px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 11px;
+  padding-right: 11px;
   transform: rotate(45deg);
 }
 
@@ -366,7 +366,7 @@ font-family: 'Baloo Thambi', cursive;
   position:relative;
   top:0px;
   display:block;
-  background:#1a1a1a;
+  background:#ffffff;
   width:30px;
   height:5px;
   margin:5px 0px;

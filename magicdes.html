@@ -3,25 +3,27 @@
 <head>
 	<title>Magic</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src="jquery-1.10.2.min.js"></script>
-     <script src="full-screen-helper.js"></script>
-     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<!-- <script src="jquery-1.10.2.min.js"></script> -->
+     <!-- <script src="full-screen-helper.js"></script> -->
+     <script src="js/jquery.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/magic.css">
-	<link rel="stylesheet" href="loder.css">
-	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   <link href="https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe" rel="stylesheet">
+	<link rel="stylesheet" href="css/loder.css">
+   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+   <!-- <link rel="stylesheet" href="css/fontawesome.css"> -->
+   <!-- <link href="https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe" rel="stylesheet">
    <link href="https://fonts.googleapis.com/css?family=Baloo+Thambi|ZCOOL+KuaiLe" rel="stylesheet">
-   <link href="https://fonts.googleapis.com/css?family=Acme|Baloo+Thambi|Permanent+Marker|ZCOOL+KuaiLe" rel="stylesheet">
-   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+   <link href="https://fonts.googleapis.com/css?family=Acme|Baloo+Thambi|Permanent+Marker|ZCOOL+KuaiLe" rel="stylesheet">-->
+   <!-- <link rel="stylesheet" href="https://use.fontawesome. com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
 <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
    <link rel="stylesheet" href="path/to/bootstrap/css/bootstrap.min.css">
-<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> --> 
+<link rel="stylesheet" href="fontawesome/css/all.css">
 
 <body>
     <div class="humble">
 <div class="good">
-<a href="#" class= "fa fa-trophy trop"></a>
+<a href="#" onclick="window.location.href='leaderboard.html'" class= "fa fa-trophy trop"></a>
 <a href="#" class= "fa fa-info openBtn" onclick="openNav()"></a>
 </div>
 <div class="final">
@@ -41,7 +43,7 @@
     <li><a href="#" onclick="openNav()">Information</a></li>
     <li><a href="#">Leaderboard</a></li>
     <li><a href="#" id="toggle-btn1" onclick="toggleFullScreen()"><i class="fas fa-desktop"></i></a></li>
-    
+
   </ul>
 </div>
 <div id="toggle-btn" onclick="toggleSidebar(this)">
@@ -68,59 +70,56 @@
 <div class="logo1"></div>
 </div>
 <script type="text/javascript">
-	{
    function openNav()
    {
       document.getElementById('nav').style.height = "100%";
-   	   
+
    }
    function closeNav()
    {
       document.getElementById('nav').style.height = "0%";
-   	   
+
    }
 
    function toggleSidebar(ref) {
   ref.classList.toggle('active');
   document.getElementById('sidebar').classList.toggle('active');
-   
+
         }
 
 function toggleFullScreen() {
-  if ((document.fullScreenElement && document.fullScreenElement !== null) ||    
+  if ((document.fullScreenElement && document.fullScreenElement !== null) ||
    (!document.mozFullScreen && !document.webkitIsFullScreen)) {
-    if (document.documentElement.requestFullScreen) {  
-      document.documentElement.requestFullScreen();  
-    } else if (document.documentElement.mozRequestFullScreen) {  
-      document.documentElement.mozRequestFullScreen();  
-    } else if (document.documentElement.webkitRequestFullScreen) {  
-      document.documentElement.webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT);  
-    }  
-  } else {  
-    if (document.cancelFullScreen) {  
-      document.cancelFullScreen();  
-    } else if (document.mozCancelFullScreen) {  
-      document.mozCancelFullScreen();  
-    } else if (document.webkitCancelFullScreen) {  
-      document.webkitCancelFullScreen();  
-    }  
-  }  
+    if (document.documentElement.requestFullScreen) {
+      document.documentElement.requestFullScreen();
+    } else if (document.documentElement.mozRequestFullScreen) {
+      document.documentElement.mozRequestFullScreen();
+    } else if (document.documentElement.webkitRequestFullScreen) {
+      document.documentElement.webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT);
+    }
+  } else {
+    if (document.cancelFullScreen) {
+      document.cancelFullScreen();
+    } else if (document.mozCancelFullScreen) {
+      document.mozCancelFullScreen();
+    } else if (document.webkitCancelFullScreen) {
+      document.webkitCancelFullScreen();
+    }
+  }
 }
-$(document).ready(function(){
-     $('.final').click(function(){
-       $('.final').toggleClass('active');
-       $('.close').toggleClass('active');
+window.addEventListener('resize', function(){
+             if(screen.width === window.innerWidth){
+                $('.final').toggleClass('active');
+                $('.close').toggleClass('active');
+  }
+});
 
 
-     })
-
-  
-  })
   function changePage()
    {
       window.location.href = ("questionsmodmagic.html");
    }
-}
+
 </script>
 </body>
 </html>
