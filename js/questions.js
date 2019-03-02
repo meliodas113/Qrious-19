@@ -43,6 +43,15 @@ $(document).ready(function () {
       document.getElementById("next").click();
        var x = document.getElementsByClassName("selected")[0].innerHTML;
        console.log(x);
+       var abc = new XMLHttpRequest();
+       abc.onreadystatechange = function(){
+           if(this.readystate == 4 && this.status == 200)
+           {
+           }
+           var y = JSON.stringify(x.value);
+           abc.open("GET","url",true);
+           abc.send(y);
+       }
 
    }
    //let sendObj = JSON.stringify({level_no:1});
